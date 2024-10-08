@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000; 
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 3s forwards; 
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000; 
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; 
+    animation: spotlightReveal 3s forwards 1s; 
+}
+
+h1 {
+    font-size: 4rem; 
+    color: #ff3333; 
+    text-shadow: 0 0 5px #ff3333; 
+}
+
+p {
+    font-size: 1.25rem; 
+    color: #ff6666; 
+    text-shadow: 0 0 3px #ff6666; 
+}
+
+@keyframes fadeIn {
+    from {
+        background-color: #000;
+    }
+    to {
+        background-color: #000; 
+    }
+}
+
+@keyframes spotlightReveal {
+    from {
+        opacity: 0; 
+        transform: translate(-50%, -50%) scale(0.8); 
+    }
+    to {
+        opacity: 1; 
+        transform: translate(-50%, -50%) scale(1); 
+    }
+}
+
+.socials-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; 
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.show-socials-button {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+
+.socials-button:hover {
+    background-color: #cc0000; 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+
+
+
+.social-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; 
+    color: white; 
+    font-size: 18px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+}
+
+.social-button:hover {
+    background-color: #cc0000; 
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; 
+    color: white; 
+    font-size: 18px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+}
+
+
+
+
+#socials-container {
+    text-align: center;
+    color: white; 
+    padding: 50px 20px; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+
+.social-links {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+.social-box {
+    background-color: rgba(255, 0, 0, 0.8); 
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+    transition: transform 0.3s; 
+    min-width: 120px; 
+    text-align: center; 
+}
+
+.social-box:hover {
+    transform: scale(1.05); 
+}
+
+
+.social-button {
+    display: inline-block;
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; 
+    color: white;
+    font-size: 14px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; 
+    color: white;
+    font-size: 16px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    font-weight: bold; 
+}
+
+
+.discord-button {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    padding: 5px 10px; 
+    background-color: #ff0000; 
+    color: white;
+    font-size: 14px; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    z-index: 1000; 
+    font-weight: bold; 
+}
+
+.discord-button:hover {
+    background-color: #000000; 
+}

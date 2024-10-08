@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TkHits</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="particles-js"></div> 
+    <div class="container">
+        <h1>Welcome to TkHits</h1>
+        <p>Your go-to music producer.</p>
+        <a href="socials.html" class="socials-button" id="socials-button">Follow Us</a>
+    </div>
+    <a href="https://discord.gg/7DsMEfYbqX" class="discord-button">Join our Discord</a>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                const socialsButton = document.getElementById('socials-button');
+                socialsButton.classList.add('show-socials-button');
+            }, 1500);
+        };
+    </script>
+    <script src="assets/js/particles.js"></script>
+</body>
+</html>

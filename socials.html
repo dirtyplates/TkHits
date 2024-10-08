@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TkHits - Socials</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Main styles -->
+    <link rel="stylesheet" href="assets/css/socials.css"> <!-- Socials styles -->
+</head>
+<body>
+    <div id="particles-js"></div> <!-- Particles background -->
+
+    <div class="container" id="socials-container">
+        <a href="https://discord.gg/7DsMEfYbqX class="discord-button">Join our Discord</a> <!-- Discord button -->
+        <h1>Connect with TkHits</h1>
+        <p>Follow us on our social media platforms:</p>
+        
+        <div class="social-links">
+            <div class="social-box">
+                <a href="https://open.spotify.com/artist/0fBeNYmcD0C84FIFqsYQuC?si=gvTR0BTAR8WcGeiSWFH5rQ" target="_blank" class="social-button">Spotify</a>
+            </div>
+            <div class="social-box">
+                <a href="https://youtube.com/@pixelplayz14?si=4txDQgkjeyKm68Tr" target="_blank" class="social-button">YouTube</a>
+            </div>
+            <div class="social-box">
+                <a href="https://www.instagram.com/" target="_blank" class="social-button">Instagram</a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Back to Home</a> <!-- Button to go back to the home page -->
+    </div>
+
+    <!-- Include the particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script src="assets/js/particles.js"></script> <!-- Include your custom particles.js file -->
+    <script>
+        // Initialize particles.js
+        particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+
+        // Fade in effect for the container
+        window.onload = function() {
+            document.getElementById('socials-container').classList.add('show-container');
+        };
+    </script>
+</body>
+</html>
